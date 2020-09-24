@@ -6,8 +6,8 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :description
       t.integer :stock
       t.string :product_img
-      t.innteger :category_id
-      t.string :reviews
+      t.integer :category_id
+      t.integer :review_id
 
       t.timestamps
     end
