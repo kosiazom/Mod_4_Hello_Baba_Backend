@@ -12,33 +12,32 @@ Order.destroy_all
 Customer.destroy_all
 Review.destroy_all
 
-Category.create(name:"Apparel")
+ apparel = Category.create(name:"Apparel")
 
-Customer.create(
+ customer =Customer.create(
     username:"Fred",
     password_digest:"password", 
     shipping_address:"123 Flatiron RD"
     )
-Product.create(
+ product = Product.create(
     name: Faker::Commerce.product_name,
     price: Faker::Commerce.price,
     description: "a",
     stock: 1,
     product_img: "image",
-    category_id:1,
-    review_id:1
+    category: apparel
     )
         
-        Review.create(
-            customer_id:1,
-            product_id:1,
-            description:"This wAs AMazing"
-            )
-            
-            
-            Order.create(
-                customer_id:1,
-                order_date:"Today", 
-                product_id:1, 
-                quantity:1
-                )
+ review = Review.create(
+    customer_id:customer.id,
+    product: product,
+    description:"This wAs AMazing"
+    )
+    
+    
+order = Order.create(
+    customer: customer,
+    order_date:"Today", 
+    product: product, 
+    quantity:1
+    )
