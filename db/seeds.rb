@@ -24,6 +24,7 @@ electronics = Category.create(name:"electronics")
 mens_clothing = Category.create(name: "men clothing")
 jewelery = Category.create(name:"jewelery")
 womens_clothing = Category.create(name:"women clothing")
+childrens_clothing = Category.create(name:"childrens clothing")
 
 # seeding customers 
 
@@ -54,21 +55,39 @@ end
 
 
  product = Product.create(
-    name: Faker::Commerce.product_name,
-    price: Faker::Commerce.price,
+    name: "Womens Maleficent Costume",
+    price: 10.31,
     description: "Buy this NOW or you will regret it  >:), this is a warning not a threat!",
     stock: 1,
-    product_img: "image",
-    category: jewelery
+    product_img: "https://lh3.googleusercontent.com/proxy/EOw383wWCYsKl549UaovkXq7iLEblzXqHSsmYqzBmHUi8ZiNYdKjWYcrCWjocSXI1hNfEiCh_vgGAA4uoJHGahp2-B4VMHTjjkdU4wzYh7wqhA0X_SJ0VqHNnEwoWL_SmMuDQ4hGVOjpXGHkLswY_u9eYrqxzkj1gO5o",
+    category: womens_clothing
     )
 product2 = Product.create(
-    name: Faker::Commerce.product_name,
-    price: Faker::Commerce.price,
-    description: "Do NOT let your fish near this product!",
+    name:"Mens Zombie Costumes",
+    price: 10.31,
+    description: "Do NOT let your pets near this product!",
     stock:2,
-    product_img:"image2",
+    product_img:"https://s1.cnnx.io/bizrate/editorial/0909_halloween/HalloweenMen_ZombieCostume1.png",
     category: electronics
 )
+
+product3 = Product.create(
+    name: "Mens Joker Costume",
+    price: 10.31,
+    description: "HAHHAHAHAHAH ",
+    stock:3,
+    product_img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/ddhlq1q-7e42694d-bb18-4a1a-9125-49e12e023108.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNWI4ZDJiMTItMjFlOC00OTMxLThhNmQtZmI5ZWNkZDYwMzgzXC9kZGhscTFxLTdlNDI2OTRkLWJiMTgtNGExYS05MTI1LTQ5ZTEyZTAyMzEwOC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Fxu32f_9UotrU3jt5zVnDgasSJSc8HuFxqVG08F3a6A",
+    category:mens_clothing
+)
+product4 = Product.create(
+    name: "Unisex Childrens Rainbow Costume",
+    price: 10.31,
+    description:"For you ray of sunshine",
+    stock:5,
+    product_img: "https://images.ctfassets.net/50gzycvace50/7xlHtePC2iObAJPYMVs52q/2590e4339b517cefea8713ff13db50a1/toddler-rainbow-halloween-costume.png",
+    category: childrens_clothing
+)
+
 #seeding reviews already on the website
 
 review = Review.create(
@@ -80,7 +99,7 @@ review = Review.create(
 review2 = Review.create(
     customer_id:customer2.id,
     product:product2,
-    description:"Awful!, killed my pet fish :( never buying again R.I.P. Guppy jr"
+    description:"Awful! I turned into a zombie and killed my pet fish :( never buying again R.I.P. Guppy jr"
 )
 
 #seeding orders already on the website 
