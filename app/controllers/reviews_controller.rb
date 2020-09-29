@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
 
-
+    # before_action :logged_in?, only: [:create, :update, :destroy]
+    
     def create
         review = Review.create(description: params[:description], customer_id: params[:customer_id], product_id: params[:product_id])
         render json: review
