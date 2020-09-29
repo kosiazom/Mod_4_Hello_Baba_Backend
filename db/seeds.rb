@@ -55,15 +55,15 @@ end
 
 
  product = Product.create(
-    name: "Womens Maleficent Costume",
+    name: "Womens Phoenix Costume",
     price: 10.31,
     description: "Buy this NOW or you will regret it  >:), this is a warning not a threat!",
     stock: 1,
-    product_img: "https://lh3.googleusercontent.com/proxy/EOw383wWCYsKl549UaovkXq7iLEblzXqHSsmYqzBmHUi8ZiNYdKjWYcrCWjocSXI1hNfEiCh_vgGAA4uoJHGahp2-B4VMHTjjkdU4wzYh7wqhA0X_SJ0VqHNnEwoWL_SmMuDQ4hGVOjpXGHkLswY_u9eYrqxzkj1gO5o",
+    product_img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1dbc1935-6542-4ee3-822f-135cff4ba62c/d9lcor7-31e34329-db9a-4de0-9afc-338eacd479bd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMWRiYzE5MzUtNjU0Mi00ZWUzLTgyMmYtMTM1Y2ZmNGJhNjJjXC9kOWxjb3I3LTMxZTM0MzI5LWRiOWEtNGRlMC05YWZjLTMzOGVhY2Q0NzliZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.JZjV9JEowLLPy8pWArAp8rIijuLBt2ZpbCZBLKKYq7g",
     category: womens_clothing
     )
 product2 = Product.create(
-    name:"Mens Zombie Costumes",
+    name:"Mens Zombie Costume",
     price: 10.31,
     description: "Do NOT let your pets near this product!",
     stock:2,
@@ -80,11 +80,11 @@ product3 = Product.create(
     category:mens_clothing
 )
 product4 = Product.create(
-    name: "Unisex Childrens Rainbow Costume",
+    name: "Unisex Childrens Wizard Costume",
     price: 10.31,
-    description:"For you ray of sunshine",
+    description:"You're a wizard INSERT YOUR CHILD'S NAME",
     stock:5,
-    product_img: "https://images.ctfassets.net/50gzycvace50/7xlHtePC2iObAJPYMVs52q/2590e4339b517cefea8713ff13db50a1/toddler-rainbow-halloween-costume.png",
+    product_img: "https://pngriver.com/wp-content/uploads/2018/04/Download-Halloween-Costume-PNG-File.png",
     category: childrens_clothing
 )
 
