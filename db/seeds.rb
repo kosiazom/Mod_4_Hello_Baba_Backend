@@ -80,7 +80,7 @@ product3 = Product.create(
     category:mens_clothing
 )
 product4 = Product.create(
-    name: "Unisex Childrens Wizard Costume",
+    name: "Childrens Wizard Costume",
     price: 10.31,
     description:"You're a wizard INSERT YOUR CHILD'S NAME",
     stock:5,
