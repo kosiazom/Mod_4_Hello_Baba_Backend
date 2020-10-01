@@ -13,13 +13,14 @@ class ReviewsController < ApplicationController
     end
 
     def update
-        review = Review.find_by(params[:id])
+        review = Review.find_by(id: params[:id])
         review.update(description: params[:description])
         render json: review
     end
 
     def destroy
-        review = Review.find_by(params[:id])
+        # byebug
+        review = Review.find_by(id: params[:id])
         review.destroy
         render json:"Review is deleted!"
     end
