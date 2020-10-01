@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
  
-    # skip_before_action :logged_in?, only:[:create]
+     skip_before_action :logged_in?, only:[:create, :index] 
 
     def index
         @customers = Customer.all
