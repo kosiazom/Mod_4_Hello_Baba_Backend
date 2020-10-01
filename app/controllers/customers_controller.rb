@@ -9,7 +9,7 @@ class CustomersController < ApplicationController
 
     #SignUp
     def create
-       byebug
+       
         customer = Customer.new(customer_params)
 
         if customer.valid?
