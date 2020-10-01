@@ -1,7 +1,12 @@
 class ReviewsController < ApplicationController
 
-    # before_action :logged_in?, only: [:create, :update, :destroy]
+     skip_before_action :logged_in?, only: [:index]
     
+    # def index
+
+    #     review = Reviews.all
+    #     render json:
+    # end
     def create
         review = Review.create(description: params[:description], customer_id: params[:customer_id], product_id: params[:product_id])
         render json: review

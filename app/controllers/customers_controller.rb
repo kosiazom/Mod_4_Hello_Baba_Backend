@@ -1,6 +1,6 @@
 class CustomersController < ApplicationController
  
-    skip_before_action :logged_in?, only:[:create]
+     skip_before_action :logged_in?, only:[:create, :index] 
 
     def index
         @customers = Customer.all
@@ -9,7 +9,7 @@ class CustomersController < ApplicationController
 
     #SignUp
     def create
-       
+      #  byebug
         customer = Customer.new(customer_params)
 
         if customer.valid?
@@ -21,8 +21,7 @@ class CustomersController < ApplicationController
         end
     end
 
-
-
+   
     private
 
   def customer_params
